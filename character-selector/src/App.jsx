@@ -89,7 +89,7 @@ function App() {
               {movies &&
                 movies.map((movie) => <li key={uuid()}>{movie.title}</li>)}
             </ul>
-            <div className="my-3 p-3 border-top">Last Apperance: {movies[movies.length - 1].release_date}</div>
+            <div className="my-3 p-3 border-top">Last Apperance: {movies[movies.length - 1].title} / {movies[movies.length - 1].release_date}</div>
           </React.Fragment>
         )}
       </div>
